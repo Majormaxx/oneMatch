@@ -50,3 +50,5 @@ dist/
 
 # Misc
 *.pem
+*.tgz
+*.tar.gz
