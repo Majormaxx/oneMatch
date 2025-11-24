@@ -1,17 +1,21 @@
-# Node modules
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+# Artifacts and temporary files
+.gemini/
+*.md
+!README.md
+!contracts/README.md
 
-# Next.js
-.next/
-out/
-build/
+# Scripts
+*.sh
 
-# Production
-dist/
+# Build artifacts
+**/build/
+**/target/
+**/.move/
+
+# Environment
+.env
+.env.local
+.env*.local
 
 # IDE
 .vscode/
@@ -24,21 +28,25 @@ dist/
 .DS_Store
 Thumbs.db
 
-# Environment
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Move
-contracts/build/
-contracts/.aptos/
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
 
 # Testing
 coverage/
 .nyc_output/
 
+# Next.js
+.next/
+out/
+dist/
+
 # Misc
-*.log
-.cache
+*.pem
