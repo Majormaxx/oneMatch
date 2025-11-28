@@ -1,0 +1,25 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy-notification:
+    name: Deployment Status
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Notify deployment start
+        run: |
+          echo "🚀 Deployment triggered for commit: ${{ github.sha }}"
+          echo "📦 Frontend will auto-deploy via Vercel"
+          echo "🔧 Backend will auto-deploy via Render"
+
+      - name: Deployment info
+        run: |
+          echo "Frontend URL: https://www.onematch.fun"
+          echo "Backend URL: https://onematch-backend.onrender.com"
+          echo "Check deployment status in Vercel and Render dashboards"

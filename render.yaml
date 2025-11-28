@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: onematch-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 3001
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: PRIVATE_KEY
+        sync: false

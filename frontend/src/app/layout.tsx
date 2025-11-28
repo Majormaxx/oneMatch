@@ -1,20 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Providers } from "@/components/Providers";
+import { Navbar } from "@/components/layout/Navbar";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "OneMatch",
-  description: "Decentralized application on OneChain",
+  title: "OneMatch - Learn DeFi Through Gaming",
+  description: "Match cards, learn OneChain concepts, and earn NFT rewards!",
 };
 
 export default function RootLayout({
@@ -24,8 +15,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <body className="antialiased bg-navy min-h-screen" suppressHydrationWarning>
+        <Providers>
+          <Navbar />
+          <main className="pt-16">
+            {children}
+          </main>
+        </Providers>
       </body>
     </html>
   );

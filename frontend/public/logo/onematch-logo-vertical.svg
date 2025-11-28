@@ -1,0 +1,45 @@
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Icon on top -->
+    <g id="hexagons-top" transform="translate(200, 60)">
+        <!-- Left Hexagon (Brain Icon) -->
+        <g id="left-hex">
+            <path d="M -40,-20 L -20,-30 L 0,-20 L 0,0 L -20,10 L -40,0 Z" stroke="#E8EAED" stroke-width="2"
+                fill="none" />
+            <!-- Brain Icon -->
+            <g transform="translate(-20, -10)" stroke="#00E5FF" stroke-width="1" fill="none">
+                <path d="M -5,-4 Q -6,-6 -4,-7 Q -2,-8 0,-7 Q 2,-8 4,-7 Q 6,-6 5,-4" />
+                <path d="M -5,-4 Q -5,0 -3,3 Q -1,5 0,5 Q 1,5 3,3 Q 5,0 5,-4" />
+                <circle cx="-3" cy="-2" r="1" />
+                <circle cx="3" cy="-2" r="1" />
+            </g>
+        </g>
+
+        <!-- Connection Chain -->
+        <g stroke="#E8EAED" stroke-width="1.5" fill="none">
+            <line x1="0" y1="-10" x2="0" y2="10" />
+            <ellipse cx="0" cy="-5" rx="3" ry="2" />
+            <ellipse cx="0" cy="5" rx="3" ry="2" />
+        </g>
+
+        <!-- Right Hexagon (Lightning Bolt) -->
+        <g id="right-hex">
+            <path d="M 0,0 L 20,10 L 40,0 L 40,-20 L 20,-30 L 0,-20 Z" stroke="#E8EAED" stroke-width="2" fill="none" />
+            <!-- Lightning Bolt -->
+            <g transform="translate(20, -10)">
+                <path d="M 1,-8 L -3,0 L 1,0 L -1,8 L 4,0 L 1,0 Z" fill="#00E5FF" stroke="#00E5FF" stroke-width="0.4" />
+            </g>
+        </g>
+    </g>
+
+    <!-- Wordmark below -->
+    <text x="200" y="140" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#FFFFFF"
+        letter-spacing="1" text-anchor="middle">
+        OneMatch
+    </text>
+
+    <!-- Tagline -->
+    <text x="200" y="165" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#00E5FF"
+        letter-spacing="2" text-anchor="middle">
+        LEARN. MATCH. EARN.
+    </text>
+</svg>
